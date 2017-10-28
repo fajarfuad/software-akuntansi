@@ -533,6 +533,14 @@
 <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('dist/js/demo.js')}}"></script>
+<script src="{{asset('js/jquery.inputmask.js')}}"></script>
+<script src="{{asset('js/jquery.inputmask.date.extensions.js')}}"></script>
+<script src="{{asset('js/jquery.inputmask.extensions.js')}}"></script>
+<script>
+  $(function () {
+    $('[data-mask]').inputmask()
+     })
+    </script>
 <script>
   $(document).ready(function () {
     $('.sidebar-menu').tree()
