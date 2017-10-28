@@ -39,13 +39,41 @@
           </div>
         </div>
 
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Nama Otoritas Pajak 1</label>
+
+          <div class="col-sm-6">
+              <input type="text" class="form-control" id="nm_1" placeholder="Nama Otoritas Pajak 1">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Jabatan</label>
+
+          <div class="col-sm-6">
+              <input type="text" class="form-control" id="jbtn1" placeholder="Jabatan Otoritas Pajak 1">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Nama Otoritas Pajak 2</label>
+
+          <div class="col-sm-6">
+              <input type="text" class="form-control" id="nm_2" placeholder="Nama Otoritas Pajak 2">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Jabatan</label>
+
+          <div class="col-sm-6">
+              <input type="text" class="form-control" id="jbtn2" placeholder="Jabatan Otoritas Pajak 2">
+          </div>
+        </div>
 
 
               </div>
               <!-- /.box-body -->
               <div class="box-footer">
-                <button type="submit" class="btn btn-default">Cancel</button>
-                <button type="submit" class="btn btn-info">Sign in</button>
+                <button type="submit" class="btn btn-default">Reset</button>
+                <button type="submit" class="btn btn-success">Simpan</button>
               </div>
               <!-- /.box-footer -->
             </form>
