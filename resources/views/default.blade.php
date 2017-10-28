@@ -227,21 +227,59 @@
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-gear"></i>
-            <span>Settings</span>
+            <i class="fa fa-share"></i> <span>Setting</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
           </a>
-          <ul class="treeview-menu">
-            <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+          <ul class="treeview-menu" style="display: none;">
+            <li><a href="#"><i class="fa fa-circle-o"></i> Profile</a></li>
+			<li><a href="#"><i class="fa fa-circle-o"></i> User Management</a></li>
+            <li class="treeview">
+              <a href="#"><i class="fa fa-circle-o"></i> Master Data
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu" style="display: block;">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Item</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Supplier</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Costumer</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Akun</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Gudang</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Cabang</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Mata Uang & Kurs</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Pajak</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Collector</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Kategori Kas</a></li>
+
+              </ul>
+            </li>
+			 <li class="treeview">
+            <a href="#"><i class="fa fa-circle-o"></i> Set Saldo Awal</a></li>
+			<span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+			  <ul class="treeview-menu" style="display: block;">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Saldo Akun</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Saldo Kas</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Saldo Stok</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Saldo Utang</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Saldo Piutang</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Saldo Uang Muka Supplier</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Saldo Uang Muka Costumer</a></li>
+				<li><a href="#"><i class="fa fa-circle-o"></i> Saldo Asset Tetap</a></li>
+
+              </ul>
+			  </li>
           </ul>
         </li>
         <li>
           <a href="../widgets.html">
-            <i class="fa fa-th"></i> <span>Widgets</span>
+            <i class="fa fa-th"></i> <span>Pembelian</span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-green">Hot</small>
+              <small class="label pull-right bg-green"></small>
             </span>
           </a>
         </li>
