@@ -246,7 +246,7 @@
         <ul class="treeview-menu">
           <li><a href="#"><i class="fa fa-circle-o"></i> Item</a></li>
   				<li><a href="/supplier"><i class="fa fa-circle-o"></i> Supplier</a></li>
-  				<li><a href="#"><i class="fa fa-circle-o"></i> Costumer</a></li>
+  				<li><a href="/costumer"><i class="fa fa-circle-o"></i> Costumer</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Akun</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Gudang</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Cabang</a></li>
