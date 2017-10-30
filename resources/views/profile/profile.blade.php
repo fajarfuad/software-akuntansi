@@ -7,8 +7,6 @@
             <div class="box-header with-border">
               <h3 class="box-title"></h3>
             </div>
-            <!-- /.box-header -->
-            <!-- form start -->
             <form class="form-horizontal">
               <div class="box-body">
                 <div class="form-group">
@@ -70,13 +68,10 @@
 
 
               </div>
-              <!-- /.box-body -->
               <div class="box-footer">
                 <button type="submit" class="btn btn-default">Reset</button>
                 <button type="submit" class="btn btn-success">Simpan</button>
               </div>
-              <!-- /.box-footer -->
             </form>
           </div>
-
 @endsection

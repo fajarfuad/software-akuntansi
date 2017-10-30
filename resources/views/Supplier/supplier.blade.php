@@ -7,7 +7,7 @@
         <div class="box-header with-border ">
           <h3 class="box-title">Supplier</h3>
           <div class="box-tools pull-right">
-            <a class="btn btn-block btn-social btn-success">
+            <a href="/supplier/create"class="btn btn-block btn-social btn-success">
                 <i class="fa fa-plus"></i> Tambah Supplier
               </a>
           </div>

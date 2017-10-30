@@ -21,4 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user', 'UserMgtController@index');
 Route::get('/profile', 'ProfilController@index');
 Route::get('/supplier', 'SupplierController@index');
+Route::get('/supplier/create', 'SupplierController@create');
 Route::get('/costumer', 'CostumerController@index');
