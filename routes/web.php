@@ -10,13 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('default');
+Route::get('/login', function()
+{
+    return view('login');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
+Route::get('/', 'HomeController@index');
 
 Route::get('/setting/user', 'UserMgtController@index');
 Route::get('/setting/profile', 'ProfilController@index');
@@ -27,3 +29,7 @@ Route::get('/setting/item', function(){
 Route::get('/setting/supplier', 'SupplierController@index');
 Route::get('/setting/supplier/create', 'SupplierController@create');
 Route::get('/setting/costumer', 'CostumerController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
