@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class UserMgtController extends Controller
 {
@@ -80,5 +81,13 @@ class UserMgtController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function akses(Request $request, $id)
+    {
+      $akses = User::find($id);
+      $akses->akses = implode(",", $request->akses);
+      $akses->save();
+      return back();
     }
 }

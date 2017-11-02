@@ -177,7 +177,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -235,8 +235,8 @@
             </span>
           </a>
       <ul class="treeview-menu" style="display: none;">
-      <li><a href="/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
-			<li><a href="/user"><i class="fa fa-circle-o"></i> User Management</a></li>
+      <li><a href="/setting/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
+			<li><a href="/setting/user"><i class="fa fa-circle-o"></i> User Management</a></li>
       <li class="treeview">
         <a href="#"><i class="fa fa-circle-o"></i> Master Data
           <span class="pull-right-container">
@@ -244,9 +244,9 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="#"><i class="fa fa-circle-o"></i> Item</a></li>
-  				<li><a href="/supplier"><i class="fa fa-circle-o"></i> Supplier</a></li>
-  				<li><a href="/costumer"><i class="fa fa-circle-o"></i> Costumer</a></li>
+          <li><a href="/setting/item"><i class="fa fa-circle-o"></i> Item</a></li>
+  				<li><a href="/setting/supplier"><i class="fa fa-circle-o"></i> Supplier</a></li>
+  				<li><a href="/setting/costumer"><i class="fa fa-circle-o"></i> Costumer</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Akun</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Gudang</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Cabang</a></li>

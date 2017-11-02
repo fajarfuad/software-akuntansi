@@ -17,29 +17,22 @@ Route::get('/login', function()
 
 Auth::routes();
 
-<<<<<<< HEAD
 Route::get('/home', 'HomeController@index');
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 
-=======
-Route::get('/home', 'HomeController@index')->name('home');
-<<<<<<< HEAD
->>>>>>> parent of e7e2e12... ganti route
 Route::get('/setting/user', 'UserMgtController@index');
+Route::post('/setting/user/akses/{id}', 'UserMgtController@akses');
 Route::get('/setting/profile', 'ProfilController@index');
 Route::get('/setting/item', function(){
   return view('item.item');
 });
-<<<<<<< HEAD
+
 
 Route::get('/setting/supplier', 'SupplierController@index');
 Route::get('/setting/supplier/create', 'SupplierController@create');
 Route::get('/setting/costumer', 'CostumerController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-=======
-=======
->>>>>>> 576df212c4dd90357f0ae40b37734a986c999c4d
->>>>>>> parent of e7e2e12... ganti route
+Route::get('/logout', function()
+{
+  Auth::logout();
+  return redirect()->route('home');
+});
