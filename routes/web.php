@@ -17,11 +17,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-<<<<<<< HEAD
+
 Route::get('/setting/user', 'UserMgtController@index');
 Route::get('/setting/profile', 'ProfilController@index');
 Route::get('/setting/item', function(){
   return view('item.item');
 });
-=======
->>>>>>> 576df212c4dd90357f0ae40b37734a986c999c4d
+
+Route::get('/setting/supplier', 'SupplierController@index');
+Route::get('/setting/supplier/create', 'SupplierController@create');
+Route::get('/setting/costumer', 'CostumerController@index');
