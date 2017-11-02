@@ -11,7 +11,7 @@
   </ul>
   <div class="tab-content">
     <div class="tab-pane active" id="tab_1">
-      
+
     </div>
     <div class="tab-pane" id="tab_2">
       <form class="" action="index.html" method="post">
@@ -27,7 +27,9 @@
           <label>Ulangi Password</label>
           <input type="password" name="new_pass_again" class="form-control" placeholder="Ulangi Password baru">
         </div>
-        <input type="submit" name="save" value="Save" class="btn btn-primary btn-flat">
+        <div class="box-footer">
+          <input type="submit" name="save" value="Save" class="btn btn-primary btn-flat pull-right">
+        </div>
       </form>
     </div>
     <div class="tab-pane" id="tab_3">
