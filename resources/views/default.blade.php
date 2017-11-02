@@ -19,6 +19,8 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="{{asset('dist/css/skins/_all-skins.css')}}">
   <link href="{{asset('bower_components/select2/dist/css/select2.min.css')}}" rel="stylesheet" />
+   <!-- DataTables -->
+  <link rel="stylesheet" href="{{asset('bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -233,7 +235,7 @@
             </span>
           </a>
       <ul class="treeview-menu" style="display: none;">
-      <li><a href="#"><i class="fa fa-circle-o"></i> Profile</a></li>
+      <li><a href="/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
 			<li><a href="/user"><i class="fa fa-circle-o"></i> User Management</a></li>
       <li class="treeview">
         <a href="#"><i class="fa fa-circle-o"></i> Master Data
@@ -243,8 +245,8 @@
         </a>
         <ul class="treeview-menu">
           <li><a href="#"><i class="fa fa-circle-o"></i> Item</a></li>
-  				<li><a href="#"><i class="fa fa-circle-o"></i> Supplier</a></li>
-  				<li><a href="#"><i class="fa fa-circle-o"></i> Costumer</a></li>
+  				<li><a href="/supplier"><i class="fa fa-circle-o"></i> Supplier</a></li>
+  				<li><a href="/costumer"><i class="fa fa-circle-o"></i> Costumer</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Akun</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Gudang</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Cabang</a></li>
@@ -533,12 +535,25 @@
 <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('dist/js/demo.js')}}"></script>
+<!-- DataTables -->
+<script src="{{asset('bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
+<!-- inputmask -->
 <script src="{{asset('js/jquery.inputmask.js')}}"></script>
 <script src="{{asset('js/jquery.inputmask.date.extensions.js')}}"></script>
 <script src="{{asset('js/jquery.inputmask.extensions.js')}}"></script>
 <script>
   $(function () {
     $('[data-mask]').inputmask()
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
      })
     </script>
 <script>
