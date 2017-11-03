@@ -7,8 +7,8 @@
         <div class="box-header with-border ">
           <h3 class="box-title">Supplier</h3>
           <div class="box-tools pull-right">
-            <a href="/setting/supplier/create" class="btn btn-block btn-social btn-success">
-                <i class="fa fa-plus"></i> Tambah Supplier
+            <a href="/setting/mitra/create" class="btn btn-flat btn-sm btn-social btn-success">
+                <i class="fa fa-plus"></i> Tambah Mitra Kerja
               </a>
           </div>
         </div>

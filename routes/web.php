@@ -30,9 +30,8 @@ Route::get('/setting/item/create', function(){
   return view('item.create');
 });
 
-Route::get('/setting/supplier', 'SupplierController@index');
-Route::get('/setting/supplier/create', 'SupplierController@create');
-Route::get('/setting/costumer', 'CostumerController@index');
+Route::get('/setting/mitra', 'MitraController@index');
+Route::get('/setting/mitra/create', 'MitraController@create');
 Route::get('/logout', function()
 {
   Auth::logout();

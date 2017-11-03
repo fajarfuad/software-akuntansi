@@ -245,8 +245,7 @@
         </a>
         <ul class="treeview-menu">
           <li><a href="/setting/item"><i class="fa fa-circle-o"></i> Item</a></li>
-  				<li><a href="/setting/supplier"><i class="fa fa-circle-o"></i> Supplier</a></li>
-  				<li><a href="/setting/costumer"><i class="fa fa-circle-o"></i> Costumer</a></li>
+  				<li><a href="/setting/mitra"><i class="fa fa-circle-o"></i> Mitra</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Akun</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Gudang</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Cabang</a></li>
