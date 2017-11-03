@@ -26,7 +26,9 @@ Route::get('/setting/profile', 'ProfilController@index');
 Route::get('/setting/item', function(){
   return view('item.item');
 });
-
+Route::get('/setting/item/create', function(){
+  return view('item.create');
+});
 
 Route::get('/setting/supplier', 'SupplierController@index');
 Route::get('/setting/supplier/create', 'SupplierController@create');

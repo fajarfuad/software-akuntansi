@@ -1,11 +1,11 @@
 @extends('default')
 
-@section('title', 'User Management')
-@section('header', 'User Management')
+@section('title', 'Item Management')
+@section('header', 'Item Management')
 @section('content')
 <div class="box box-primary">
   <div class="box-header">
-    <a href="/add/item" class="btn btn-primary btn-flat pull-right"><span class="fa fa-plus"></span> Tambah Barang</a>
+    <a href="/setting/item/create" class="btn btn-primary btn-flat pull-right"><span class="fa fa-plus"></span> Tambah Barang</a>
   </div>
   <div class="box-body">
     <table class="table table-bordered table-striped" id="datatable">
@@ -24,7 +24,7 @@
 @section('script')
 <script type="text/javascript">
 $(function () {
-  $('#datatble').DataTable();
+  $('#datatable').DataTable();
 });
 </script>
 @endsection

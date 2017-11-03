@@ -1,7 +1,7 @@
 @extends('default')
 
-@section('title', 'Profile Perusahaan')
-@section('header', 'Profile Perusahaan')
+@section('title', 'Profil Perusahaan')
+@section('header', 'Profil Perusahaan')
 @section('content')
 <div class="box box-info">
             <div class="box-header with-border">

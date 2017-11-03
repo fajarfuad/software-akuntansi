@@ -7,7 +7,7 @@
         <div class="box-header with-border ">
           <h3 class="box-title">Supplier</h3>
           <div class="box-tools pull-right">
-            <a href="/supplier/create"class="btn btn-block btn-social btn-success">
+            <a href="/setting/supplier/create" class="btn btn-block btn-social btn-success">
                 <i class="fa fa-plus"></i> Tambah Supplier
               </a>
           </div>
@@ -30,24 +30,8 @@
                 </tr>
                 </thead>
 				        <tbody>
-
-              <tr>
-              <td ></td>
-              <td ></td>
-             	<td ></td>
-				      <td ></td>
-			 	      <td ></td>
-			        <td ></td>
-              <td ></td>
-			        <td style="text-align: center;"><div class="btn-group">
-                      <a href="/profile" id=''><span class="glyphicon glyphicon-eye-open"></span></a>
-                      <a href="/profile" id=''><span class="glyphicon glyphicon-pencil"></span></a>
-                      <a href="/profile" id=''><span class="glyphicon glyphicon-trash"></span></a>
-                    </div>
-	         </td>
-                </tr>
 				</tbody>
-              </table>
+    </table>
 	</div>
 	</div>
   @endsection
