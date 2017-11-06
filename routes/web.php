@@ -16,6 +16,7 @@ Route::get('/login', function()
 });
 
 Auth::routes();
+Route::resource('kontak', 'KontakController');
 
 Route::get('/home', 'HomeController@index');
 Route::get('/', 'HomeController@index')->name('home');
@@ -37,5 +38,3 @@ Route::get('/logout', function()
   Auth::logout();
   return redirect()->route('home');
 });
-
-Route::resource('kontak', 'KontakController');

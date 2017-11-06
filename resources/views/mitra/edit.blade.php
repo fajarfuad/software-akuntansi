@@ -19,64 +19,66 @@
   </ul>
   <div class="tab-content">
     <div class="tab-pane active" id="tab_1">
-      <form class="form-horizontal" method="post" action="/kontak">
+      @foreach($kontak as $data)
+      <form class="form-horizontal" action="{{Route('kontak.update', $data->id)}}">
+      {{ method_field('PUT')}}
       {{ csrf_field() }}
         <div class="box-body">
           <div class="form-group">
             <label class="col-sm-2 control-label">Kode</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="kode" name="kode" placeholder="AUTO">
+              <input type="text" class="form-control" id="kode" name="kode" value="{{ $data->kode }}">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">Nama</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Supplier">
+              <input type="text" class="form-control" id="nama" name="nama" value="{{ $data->nama }}">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">Alamat</label>
             <div class="col-sm-6">
-              <textarea class="form-control" name="alamat" rows="3" placeholder="Alamat Supplier"></textarea>
+              <textarea class="form-control" name="alamat" rows="3">{{ $data->alamat }}</textarea>
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">No Telepon</label>
             <div class="col-sm-6">
-              <input type="text" name="no_tlp" class="form-control" id="nama" placeholder="No Telepon">
+              <input type="text" name="no_tlp" class="form-control" id="nama" value="{{ $data->no_tlp }}">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">Email</label>
             <div class="col-sm-6">
-              <input type="text" name="email" class="form-control" id="nama" placeholder="Email">
+              <input type="text" name="email" class="form-control" id="nama" value="{{ $data->email }}">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">Nama Bank</label>
             <div class="col-sm-6">
-              <input type="text" name="bank" class="form-control" id="nama" placeholder="Nama Bank">
+              <input type="text" name="bank" class="form-control" id="nama" value="{{ $data->bank }}">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">No Rekening</label>
             <div class="col-sm-6">
-              <input type="text" name="no_rek" class="form-control" id="nama" placeholder="No Rekening">
+              <input type="text" name="no_rek" class="form-control" id="nama" value="{{ $data->no_rek }}">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">NPWP</label>
             <div class="col-sm-6">
-          <input type="text" placeholder="Masukkan No NPWP" name="npwp" class="form-control" data-inputmask='"mask": "99 – 999 – 999 – 9 – 999 – 999"' data-mask>
+          <input type="text" value="{{ $data->npwp }}" name="npwp" class="form-control" data-inputmask='"mask": "99 – 999 – 999 – 9 – 999 – 999"' data-mask>
         </div>
       </div>
         <div class="form-group">
           <label class="col-sm-2 control-label">Jenis Mitra</label>
           <div class="col-sm-6">
-            <input type="checkbox" name="supplier" value="1"> Supplier <br>
-            <input type="checkbox" name="customer" value="1"> Customer <br>
-            <input type="checkbox" name="collector" value="1"> Collector <br>
-            <input type="checkbox" name="karyawan" value="1"> Karyawan <br>
+            <input type="checkbox" name="supplier" value="1" @if($data->is_supplier == 1) checked @endif> Supplier <br>
+            <input type="checkbox" name="customer" value="1" @if($data->is_customer == 1) checked @endif> Customer <br>
+            <input type="checkbox" name="collector" value="1" @if($data->is_collector == 1) checked @endif> Collector <br>
+            <input type="checkbox" name="karyawan" value="1" @if($data->is_karyawan == 1) checked @endif> Karyawan <br>
           </div>
         </div>
         </div>
@@ -85,6 +87,7 @@
           <button type="submit" class="btn btn-success">Simpan</button>
         </div>
       </form>
+    @endforeach
     </div>
     <div class="tab-pane" id="tab_2">
       <div class="box-header with-border">

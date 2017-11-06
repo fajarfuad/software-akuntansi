@@ -23,13 +23,27 @@
 				    <th width="15%">Nama</th>
 			      <th width="20%">Alamat</th>
 			      <th width="15%">No Telepon</th>
-			      <th width="15%">Email</th>
             <th width="15%">No NPWP</th>
             <th style="text-align: center;" width="7%">Aksi</th>
 
                 </tr>
                 </thead>
 				        <tbody>
+            @foreach($kontak as $i => $kontaks)
+              <tr>
+                <td>{{ $i++ }}</td>
+                <td>{{ $kontaks->kode }}</td>
+                <td>{{ $kontaks->nama }}</td>
+                <td>{{ $kontaks->alamat }}</td>
+                <td>{{ $kontaks->no_tlp }}</td>
+                <td>{{ $kontaks->npwp }}</td>
+                <td>
+                  <a href="{{ Route('kontak.show', $kontaks->id) }}" ><span class="fa fa-eye"></span></a>
+                  <a href="{{ Route('kontak.edit', $kontaks->id) }}" ><span class="fa fa-pencil"></span></a>
+                  <a href="{{ Route('kontak.destroy', $kontaks->id)}}" ><span class="fa fa-trash-o"></span></a>
+                </td>
+              </tr>
+            @endforeach
 				</tbody>
     </table>
 	</div>

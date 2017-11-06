@@ -14,7 +14,7 @@ class KontakController extends Controller
      */
     public function index()
     {
-        //
+        return view('mitra.index', ['kontak' => Kontak::all()]);
     }
 
     /**
@@ -61,7 +61,7 @@ class KontakController extends Controller
      */
     public function show(Kontak $kontak)
     {
-        //
+
     }
 
     /**
@@ -72,7 +72,8 @@ class KontakController extends Controller
      */
     public function edit(Kontak $kontak)
     {
-        //
+        $get = Kontak::find($kontak);
+        return view('mitra.edit', ['kontak' => $get]);
     }
 
     /**
@@ -84,7 +85,9 @@ class KontakController extends Controller
      */
     public function update(Request $request, Kontak $kontak)
     {
-        //
+        $update = Kontak::find($kontak);
+        $update = Request::all();
+        dd($update);
     }
 
     /**
@@ -95,6 +98,10 @@ class KontakController extends Controller
      */
     public function destroy(Kontak $kontak)
     {
-        //
+      dd($kontak);
+      $hapus = Kontak::find($kontak);
+      $hapus->delete();
+
+      return back();
     }
 }
