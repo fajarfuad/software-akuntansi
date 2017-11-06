@@ -20,8 +20,7 @@
   <div class="tab-content">
     <div class="tab-pane active" id="tab_1">
       @foreach($kontak as $data)
-      <form class="form-horizontal" action="{{Route('kontak.update', $data->id)}}">
-      {{ method_field('PUT')}}
+      <form class="form-horizontal" method="post" action="/kontak/update/{{$data->id}}">
       {{ csrf_field() }}
         <div class="box-body">
           <div class="form-group">

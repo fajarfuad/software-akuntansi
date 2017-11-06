@@ -83,11 +83,24 @@ class KontakController extends Controller
      * @param  \App\Kontak  $kontak
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Kontak $kontak)
+    public function update(Request $request, $id)
     {
-        $update = Kontak::find($kontak);
-        $update = Request::all();
-        dd($update);
+      $update = Kontak::find($id);
+      $update->kode = $request->kode;
+      $update->nama = $request->nama;
+      $update->alamat = $request->alamat;
+      $update->no_tlp = $request->no_tlp;
+      $update->email = $request->email;
+      $update->bank = $request->bank;
+      $update->no_rek = $request->no_rek;
+      $update->npwp = str_replace("-", "", $request->npwp);
+      $update->is_supplier = $request->supplier;
+      $update->is_customer = $request->customer;
+      $update->is_collector = $request->collector;
+      $update->is_karyawan = $request->karyawan;
+      $update->save();
+
+      return back()->with('success', 'Data Berhasil di Update!');
     }
 
     /**
@@ -96,10 +109,9 @@ class KontakController extends Controller
      * @param  \App\Kontak  $kontak
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kontak $kontak)
+    public function destroy($id)
     {
-      dd($kontak);
-      $hapus = Kontak::find($kontak);
+      $hapus = Kontak::find($id);
       $hapus->delete();
 
       return back();

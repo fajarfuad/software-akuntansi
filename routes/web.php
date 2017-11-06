@@ -17,7 +17,8 @@ Route::get('/login', function()
 
 Auth::routes();
 Route::resource('kontak', 'KontakController');
-
+Route::post('/kontak/update/{id}', 'KontakController@update');
+Route::get('/kontak/destroy/{id}', 'KontakController@destroy');
 Route::get('/home', 'HomeController@index');
 Route::get('/', 'HomeController@index')->name('home');
 

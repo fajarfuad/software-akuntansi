@@ -541,6 +541,9 @@
 <script src="{{asset('js/jquery.inputmask.js')}}"></script>
 <script src="{{asset('js/jquery.inputmask.date.extensions.js')}}"></script>
 <script src="{{asset('js/jquery.inputmask.extensions.js')}}"></script>
+<script src="{{asset('bower_components/jquery.popconfirm.js')}}"></script>
+
+</script>
 <script>
   $(function () {
     $('[data-mask]').inputmask()

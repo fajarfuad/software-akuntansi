@@ -40,7 +40,7 @@
                 <td>
                   <a href="{{ Route('kontak.show', $kontaks->id) }}" ><span class="fa fa-eye"></span></a>
                   <a href="{{ Route('kontak.edit', $kontaks->id) }}" ><span class="fa fa-pencil"></span></a>
-                  <a href="{{ Route('kontak.destroy', $kontaks->id)}}" ><span class="fa fa-trash-o"></span></a>
+                  <a href="/kontak/destroy/{{$kontaks->id}}" class="confirm" ><span class="fa fa-trash-o"></span></a>
                 </td>
               </tr>
             @endforeach
@@ -49,3 +49,12 @@
 	</div>
 	</div>
   @endsection
+@section('script')
+<script type="text/javascript">
+$(".confirm").popConfirm({
+  title: "Hapus Kontak",
+  content: "Anda yakin ingin menghapus kontak ini?",
+  placement: "left"
+});
+</script>
+@endsection
