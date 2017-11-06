@@ -7,62 +7,78 @@
   <div class="box-header with-border ">
    <h3 class="box-title">Supplier</h3>
   </div>
+  <div class="box-body">
+  @if (Session::has('success'))
+      <div class="alert alert-success">
+          <p>{{ Session::get('success') }}</p>
+      </div>
+  @endif
   <ul class="nav nav-tabs">
     <li class="active"><a href="#tab_1" data-toggle="tab"> Profil </a></li>
     <li><a href="#tab_2" data-toggle="tab">Afiliasi</a></li>
   </ul>
   <div class="tab-content">
     <div class="tab-pane active" id="tab_1">
-      <form class="form-horizontal">
+      <form class="form-horizontal" method="post" action="/kontak">
+      {{ csrf_field() }}
         <div class="box-body">
           <div class="form-group">
             <label class="col-sm-2 control-label">Kode</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="kode" placeholder="AUTO">
+              <input type="text" class="form-control" id="kode" name="kode" placeholder="AUTO">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">Nama</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="nama" placeholder="Nama Supplier">
+              <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Supplier">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">Alamat</label>
             <div class="col-sm-6">
-              <textarea class="form-control" rows="3" placeholder="Alamat Supplier"></textarea>
+              <textarea class="form-control" name="alamat" rows="3" placeholder="Alamat Supplier"></textarea>
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">No Telepon</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="nama" placeholder="No Telepon">
+              <input type="text" name="no_tlp" class="form-control" id="nama" placeholder="No Telepon">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">Email</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="nama" placeholder="Email">
+              <input type="text" name="email" class="form-control" id="nama" placeholder="Email">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">Nama Bank</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="nama" placeholder="Nama Bank">
+              <input type="text" name="bank" class="form-control" id="nama" placeholder="Nama Bank">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">No Rekening</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="nama" placeholder="No Rekening">
+              <input type="text" name="no_rek" class="form-control" id="nama" placeholder="No Rekening">
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">NPWP</label>
             <div class="col-sm-6">
-          <input type="text" placeholder="Masukkan No NPWP" class="form-control" data-inputmask='"mask": "99 – 999 – 999 – 9 – 999 – 999"' data-mask>
+          <input type="text" placeholder="Masukkan No NPWP" name="npwp" class="form-control" data-inputmask='"mask": "99 – 999 – 999 – 9 – 999 – 999"' data-mask>
         </div>
       </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Jenis Mitra</label>
+          <div class="col-sm-6">
+            <input type="checkbox" name="supplier" value="1"> Supplier <br>
+            <input type="checkbox" name="customer" value="1"> Customer <br>
+            <input type="checkbox" name="collector" value="1"> Collector <br>
+            <input type="checkbox" name="karyawan" value="1"> Karyawan <br>
+          </div>
+        </div>
         </div>
         <div class="box-footer">
           <button type="submit" class="btn btn-default">Reset</button>
@@ -116,6 +132,7 @@
                     </table>
       	</div>
       	</div>
+    </div>
   </div>
 </div>
 @endsection

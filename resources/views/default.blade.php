@@ -595,9 +595,7 @@
             return false;
         });
     });
-$(".select2").select2({
-    placeholder: "Pilih Pekerjaan",
-});
+$(".select2").select2();
 </script>
 @yield('script')
 </body>

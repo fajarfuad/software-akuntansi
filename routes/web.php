@@ -37,3 +37,5 @@ Route::get('/logout', function()
   Auth::logout();
   return redirect()->route('home');
 });
+
+Route::resource('kontak', 'KontakController');
