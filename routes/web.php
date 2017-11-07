@@ -39,3 +39,12 @@ Route::get('/logout', function()
   Auth::logout();
   return redirect()->route('home');
 });
+Route::get('/setting/akun', 'AkunController@index')->name('akun.index');
+Route::post('/akun/create', 'AkunController@store');
+Route::get('/akun/delete/{id}', 'AkunController@destroy');
+Route::get('/akun/edit/{id}', function($id)
+{
+  $akun = App\Akun::find($id);
+  return response()->json($akun);
+});
+Route::post('akun/update/{id}', 'AkunController@update');

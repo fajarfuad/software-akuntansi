@@ -246,7 +246,7 @@
         <ul class="treeview-menu">
           <li><a href="/setting/item"><i class="fa fa-circle-o"></i> Item</a></li>
   				<li><a href="/kontak"><i class="fa fa-circle-o"></i> Kontak</a></li>
-  				<li><a href="#"><i class="fa fa-circle-o"></i> Akun</a></li>
+  				<li><a href="/setting/akun"><i class="fa fa-circle-o"></i> Akun</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Gudang</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Cabang</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Mata Uang & Kurs</a></li>
