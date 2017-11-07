@@ -229,26 +229,26 @@
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-share"></i> <span>Setting</span>
+            <i class="fa fa-gears"></i> <span>Setting</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
       <ul class="treeview-menu" style="display: none;">
-      <li><a href="/setting/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
-			<li><a href="/setting/user"><i class="fa fa-circle-o"></i> User Management</a></li>
+      <li><a href="/setting/profile"><i class="fa fa-industry"></i> Profile</a></li>
+			<li><a href="/setting/user"><i class="fa fa-user"></i> User Management</a></li>
       <li class="treeview">
-        <a href="#"><i class="fa fa-circle-o"></i> Master Data
+        <a href="#"><i class="fa fa-archive"></i> Master Data
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="/setting/item"><i class="fa fa-circle-o"></i> Item</a></li>
-  				<li><a href="/kontak"><i class="fa fa-circle-o"></i> Kontak</a></li>
-  				<li><a href="/setting/akun"><i class="fa fa-circle-o"></i> Akun</a></li>
-  				<li><a href="#"><i class="fa fa-circle-o"></i> Gudang</a></li>
-  				<li><a href="#"><i class="fa fa-circle-o"></i> Cabang</a></li>
+          <li><a href="/setting/item"><i class="fa fa-cubes"></i> Item</a></li>
+  				<li><a href="/kontak"><i class="fa fa-users"></i> Kontak</a></li>
+  				<li><a href="/setting/akun"><i class="fa fa-file-text"></i> Akun</a></li>
+  				<li><a href="/setting/gudang"><i class="fa fa-institution"></i> Gudang</a></li>
+  				<li><a href="/setting/cabang"><i class="fa fa-share-alt"></i> Cabang</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Mata Uang & Kurs</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Pajak</a></li>
   				<li><a href="#"><i class="fa fa-circle-o"></i> Collector</a></li>

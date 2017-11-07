@@ -39,6 +39,7 @@ Route::get('/logout', function()
   Auth::logout();
   return redirect()->route('home');
 });
+//Akun
 Route::get('/setting/akun', 'AkunController@index')->name('akun.index');
 Route::post('/akun/create', 'AkunController@store');
 Route::get('/akun/delete/{id}', 'AkunController@destroy');
@@ -48,3 +49,23 @@ Route::get('/akun/edit/{id}', function($id)
   return response()->json($akun);
 });
 Route::post('akun/update/{id}', 'AkunController@update');
+//Gudang
+Route::get('/setting/gudang', 'GudangController@index');
+Route::post('/gudang/create', 'GudangController@store');
+Route::get('/gudang/delete/{id}', 'GudangController@destroy');
+Route::get('/gudang/edit/{id}', function($id)
+{
+  $akun = App\Gudang::find($id);
+  return response()->json($akun);
+});
+Route::post('gudang/update/{id}', 'GudangController@update');
+//Cabang
+Route::get('/setting/cabang', 'CabangController@index');
+Route::post('/cabang/create', 'CabangController@store');
+Route::get('/cabang/delete/{id}', 'CabangController@destroy');
+Route::get('/cabang/edit/{id}', function($id)
+{
+  $akun = App\Cabang::find($id);
+  return response()->json($akun);
+});
+Route::post('cabang/update/{id}', 'CabangController@update');
